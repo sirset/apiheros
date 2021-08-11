@@ -22,7 +22,7 @@ router.get("/:id",(req,res)=>{
             if(data){
                 res.json(data);
             }else{
-                res.status(300).end();
+                res.status(400).end();
             }
         });
 });
@@ -33,7 +33,7 @@ router.post("/",(req,res)=>{
             if(data){
                 res.json(data);
             }else{
-                res.status(300).end();
+                res.status(400).end();
             }
     });
 })
